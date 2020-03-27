@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Instacram</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- You can add your styles and scripts here -->
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/provided.css" />
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+    <script type="module" src="src/helpers.js"></script>
+    <script type="module" src="src/api.js"></script>
+    <script type="text/javascript" src="src/login.js"></script>
+    <script type="text/javascript" src="src/register.js"></script>
+</head>
+<body>
+    <!-- This is an example app structure --> 
+    <header></header>
+    <div id="login_box" style="vertical-align: center; text-align: center">
+        <div  id="sub_login" >
+            <h1>Instacram</h1>
+            <p><input type="text" id="username" placeholder="Username"></p>
+            <p><input type="password" id="password" placeholder="Password"></p>
+            <p>
+                <input type="button" value="Login" onclick="Login();">
+                <input type="button" onclick="Show_register();" value="Register">
+                <input type="button" onclick="Reset();" value="Reset">
+            </p>
+        </div>
+    </div>
+    <div id="register_box" class="c1 hide">
+        <div id="sub_register" class="c3 hide">
+            <p>Instacram</p>
+            <p><input type="text" id="registerusername" placeholder="Username"></p>
+            <p><input type="password" id="registerpass" placeholder="Password"></p>
+            <p><input type="email" id="registeremail" placeholder="E-mail"></p>
+            <p><input type="text" id="registername" placeholder="Name"></p>
+            <p>
+                <input type="button" value="Register" onclick="Registration();">
+                <input type="button" value="Cancel" onclick="Hide_register();">
+            </p>
+        </div>
+    </div>
+</body>
+</html>

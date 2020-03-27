@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Instacram</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/provided.css" />
+    <script type="text/javascript">
+        window.onload = function what() {
+            let value = window.localStorage.getItem('user').toString();
+            document.getElementById("user").innerHTML = value;
+        };
+    </script>
+    <script type="text/javascript" src="src/post.js"></script>
+</head>
+<body>
+<!-- This is an example app structure -->
+<header class='banner'>
+    <h1>Instacram</h1>
+    <form id="username" style="text-align: right; margin-left: 750px;">
+        <label id="user"></label>
+    </form>
+    <br>
+    <input id="user_info" type="button" value="Info">
+    <input id="post" type="button" value="Post" onclick="Show();">
+    <div id="post_box" class="c1 hide">
+        <div id="sub_post" class="c2 hide">
+            <p>Post</p>
+            <p><textarea id="post_content" placeholder="Content"></textarea></p>
+            <p><input type="file" id="post_file"></p>
+            <p>
+                <input id="post_submit" type="button" value="Post">
+                <input type="button" value="Cancel" onclick="Hide();">
+            </p>
+        </div>
+    </div>
+</header>
+<main role='main'>
+    <!-- app goes here -->
+    <div id='user-feed'>
+        <!-- inject feed data -->
+    </div>
+    <div id="sample">
+    </div>
+    <div id="sub-feed" class="scrollFooter">
+        <img id="loading" src="/images/loading.gif" style="width: 45px; height: 45px">
+    </div>
+</main>
+<script type="module" src="src/user.js"></script>
+<script type="module" src="src/postcon.js"></script>
+</body>
+</html>

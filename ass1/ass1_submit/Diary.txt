@@ -1,0 +1,28 @@
+Date      Start   Stop    Activity Comments
+21/09/201817:00   22:00   coding
+22/09/201813:00   17:00   debugging
+                                   Accomplishing
+                                   partial
+                                   contents of
+23/09/201810:00   12:00   coding   subset1.
+                                   Accomplishing
+                                   all the
+                                   contents of
+24/09/201813:00   17:00   coding   subset1.
+                                   Found bug in
+25/09/201817:00   22:00   debuggingsubset1.
+                                   Found bug in
+26/09/201812:00   16:30   debuggingsubset1.
+                                   Accomplishing
+                                   partial
+                                   contents of
+27/09/201813:00   17:00   coding   subset2.
+                                   Accomplishing
+                                   all the
+                                   contents of
+28/09/201813:00   17:00   coding   subset2.
+                                   Found bug in
+29/09/201810:00   17:00   debuggingsubset2.
+                                   Found bug in
+30/09/201810:00   17:00   debuggingsubset2.
+

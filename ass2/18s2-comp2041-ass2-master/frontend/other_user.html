@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title id="other_user_name"></title>
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/provided.css" />
+    <script type="text/javascript" src="src/post.js"></script>
+</head>
+<body>
+<header class='banner'>
+    <h1>Instacram</h1>
+    <form id="username" style="text-align: right; margin-left: 580px;">
+        <label id="user"></label>
+        <label style="margin-left: 10px">following:</label>
+        <label id="following"></label>
+        <label style="margin-left: 10px">followed:</label>
+        <label id="followed"></label>
+    </form>
+    <br>
+    <input id="follow" type="button" value="follow">
+</header>
+<main role='main'>
+    <!-- app goes here -->
+    <div id='other-user-feed'>
+        <!-- inject feed data -->
+    </div>
+</main>
+<script type="module" src="src/otheruser.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+</style>
+<script>
+    function goback() {
+        window.location.href = "success.html";
+    }
+
+    function update() {
+        document.getElementById('update_box').classList.remove('hide');
+        document.getElementById('sub_update').classList.remove('hide');
+    }
+
+    function Hide() {
+        document.getElementById('update_box').classList.add('hide');
+        document.getElementById('sub_update').classList.add('hide');
+    }
+
+    function modify() {
+        document.getElementById('password_box').classList.remove('hide');
+        document.getElementById('sub_password').classList.remove('hide');
+    }
+
+    function Invisible() {
+        document.getElementById('password_box').classList.add('hide');
+        document.getElementById('sub_password').classList.add('hide');
+    }
+</script>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/provided.css" />
+    <title id="user_title"></title>
+</head>
+<div id="update_box" class="c1 hide">
+    <div  id="sub_update" class="c2 hide">
+        <p>Update Information</p>
+        <p>
+            <label>Username:</label>
+            <input type="text" id="upd_name" placeholder="Username">
+        </p>
+        <p>
+            <label style="margin-left: 30px">E-mail:</label>
+            <input type="email" id="upd_email" placeholder="E-mail">
+        </p>
+        <p>
+            <input id="up_button" type="button" value="Update">
+            <input type="button" value="Cancel" onclick="Hide();">
+        </p>
+    </div>
+</div>
+<div id="password_box" class="c1 hide">
+    <div  id="sub_password" class="c2 hide">
+        <p>Update Password</p>
+        <p>
+            <label>Password:</label>
+            <input type="password" id="mPassword" placeholder="Password">
+        </p>
+        <p>
+            <label style="margin-left: 10px">Confirm:</label>
+            <input type="password" id="aPassword" placeholder="Confirm Password">
+        </p>
+        <p>
+            <input id="up_password" type="button" value="Modify">
+            <input type="button" value="Cancel" onclick="Invisible();">
+        </p>
+    </div>
+</div>
+<body>
+<table align="center" >
+    <tbody>
+    <tr>
+        <td colspan="5" align="left">Username:</td>
+        <td id="username" colspan="5" align="right"></td>
+    </tr>
+    <tr>
+        <td colspan="5" align="left">Number of posts:</td>
+        <td id="num_of_posts" colspan="5" align="right"></td>
+    </tr>
+    <tr>
+        <td colspan="5" align="left">Likes:</td>
+        <td id="likes" colspan="5" align="right"></td>
+    </tr>
+    <tr>
+        <td colspan="5" align="left">E-mail:</td>
+        <td id="email" colspan="5" align="right"></td>
+    </tr>
+    <tr>
+        <td colspan="5" align="left">Followed by:</td>
+        <td id="followed" colspan="5" align="right"></td>
+    </tr>
+    <tr>
+        <td colspan="5" align="left">Following:</td>
+        <td colspan="5" align="right">
+            <a id="following" href="following.html"></a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<div align="center">
+    <input id="goback" value="Go Back" type="button" onclick="goback();"/>
+    <input id="update" value="Update" type="button" onclick="update();"/>
+    <input id="forget" value="Forget" type="button" onclick="modify();"/>
+</div>
+<script type="module" src="src/detail.js"></script>
+</body>
+</html>

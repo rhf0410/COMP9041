@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title id="user_name"></title>
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/provided.css" />
+    <script type="text/javascript">
+        window.onload = function what() {
+            let user = window.localStorage.getItem('user').toString();
+            document.getElementById("user").innerHTML = user;
+        };
+    </script>
+    <script type="text/javascript" src="src/post.js"></script>
+</head>
+<body>
+<header class='banner'>
+    <h1>Instacram</h1>
+    <form id="username" style="text-align: right; margin-left: 780px;">
+        <label id="user"></label>
+    </form>
+    <div id="post_box" class="c1 hide">
+        <div id="sub_post" class="c2 hide">
+            <p>Post</p>
+            <p><textarea id="post_content" placeholder="Content"></textarea></p>
+            <p><input type="file" id="post_file"></p>
+            <p>
+                <input id="post_submit" type="button" value="Post">
+                <input type="button" value="Cancel" onclick="Hide();">
+            </p>
+        </div>
+    </div>
+</header>
+<main role='main'>
+    <!-- app goes here -->
+    <div id='user-post-feed'>
+        <!-- inject feed data -->
+    </div>
+</main>
+<script type="module" src="src/userpost.js"></script>
+<script type="module" src="src/newpost.js"></script>
+</body>
+</html>
